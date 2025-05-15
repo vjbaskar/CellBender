@@ -806,7 +806,3 @@ def run_inference(dataset_obj: SingleCellRNACountsDataset,
 
     return model, scheduler, train_loader, test_loader
 
-def run_cellbender_from_python(args_list):
-    import sys
-    sys.argv = ['remove-background'] + args_list
-    main()
