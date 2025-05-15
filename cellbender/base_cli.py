@@ -123,6 +123,11 @@ def main():
 
     return 0
 
+def run_cellbender_from_python(args_list):
+    import sys
+    sys.argv = ['remove-background'] + args_list
+    main()
+
 
 if __name__ == '__main__':
     sys.exit(main())
